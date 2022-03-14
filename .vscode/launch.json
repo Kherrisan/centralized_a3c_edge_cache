@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "main.py",
+            "type": "python",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "train a3c",
+            "type": "python",
+            "request": "launch",
+            "program": "a3c.py",
+            "args": [
+                "--e",
+                "1000"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "test a3c",
+            "type": "python",
+            "request": "launch",
+            "program": "a3c.py",
+            "args": [
+                "--test",
+                "--e",
+                "1000"
+            ],
+            "console": "integratedTerminal"
+        },
+    ]
+}

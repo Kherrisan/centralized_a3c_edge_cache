@@ -1,0 +1,17 @@
+project: rlbcec_sweep_u
+program: a3c.py
+method: grid
+command:
+  - ${env}
+  - /Users/zoudikai/opt/anaconda3/envs/a3cgym/bin/python
+  - ${program}
+  - ${args}
+metric:
+  goal: minimize
+  name: episode average delay
+parameters:
+  e:
+    value: 2500
+  s:
+    values: [2, 6, 10, 14, 18, 22]
+    
